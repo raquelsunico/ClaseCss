@@ -1,0 +1,67 @@
+git <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--con este container le podemos dar estilo a toda nuestra pagina-->
+        <div id="container">
+        <!-- con la etiqueta <header> podemos definir nuestra cabecera-->
+        <header>
+       <h1 style="color:black">Estilos con CSS</h1>
+        </header>
+            <!--ahora definiremos un menu, para ello tulizamos la etiqueta <nav> -->
+            <nav class="menu">  
+                <ul>
+                    <li><a style="color:black" href="paginas/Contacto.html"><strong>Contacto</strong></a></li> 
+                    <li><a style="color:black" href="paginas/Blog.html"><strong>Blog</strong></a></li>                                         
+                    <li><a style="color:black" href="paginas/QuienesSomos.html"><strong>Quienes Somos</strong></a></li>
+                    <li><a style="color:black" href="index.html"><strong>Inicio</strong></a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div> <!--esta etiqueta se coloca para darle estilo y no permitir que los elementos de abajo suban-->
+            <!--con la etiqueta section (que representa una caja) vamos a definir parte del contenido, luego con la etiqueta <article> creamos varios articulos-->
+            <section id="content">
+                <article class="article">
+                    <h2>El dólar blue marcó nuevos récords: a cuánto cerró en cada provincia</h2><br>
+                    <p>El dólar blue batió este lunes un nuevo récord histórico, según un relevamiento de Ámbito, en medio de un contexto de incertidumbre financiera luego de la salida de Martín Guzmán al frente del Ministerio de Economía, y del anuncio de su reemplazante, Silvina Batakis.</p>
+                </article>
+
+                <article class="article">
+                    <h2>Dolor de cabeza para Isabel II: el príncipe Carlos recibió bolsas con dinero de un jeque qatarí</h2><br>
+                    <p>El heredero al trono británico aceptó donaciones en efectivo. Aunque asegura que todo fue legal, se abrirá una investigación.</p><br>
+                    <p>La realeza británica, inmiscuida en una progresiva transición del trono, se vio sacudida con un informe del Sunday Times sobre la entrega de bolsas y un maletín con dinero en efectivo que hizo un jeque qatarí al príncipe Carlos, un asunto que será investigado.</p>
+                </article>
+
+                <article class="article">
+                    <h2>¿Es cierto que las criptomonedas como Bitcoin contaminan?</h2><br>
+                    <p>Bitcoin existe desde hace más de una década, y si bien ha tenido caídas como cualquier activo volátil, cada vez demuestra ser más fuerte, más robusto y una verdadera alternativa al sistema económico financiero tradicional.</p><br>
+                    <p>Que Bitcoin contamina mucho. Que Bitcoin consume más energía que un país pequeño. Que Bitcoin es un fraude. Que Bitcoin es una burbuja. Que Bitcoin ha muerto. Muchos parecen repetir esto una y otra vez. Lo cierto es que Bitcoin existe desde hace más de una década, y si bien ha tenido caídas como cualquier activo volátil, cada vez demuestra ser más fuerte, más robusto y una verdadera alternativa al sistema económico financiero tradicional. Y además, con más transparencia que los bancos y los gobiernos.</p>
+                </article>
+
+                <article class="article">
+                    <h2>Entregan premio al proveedor de Internet más rápido de Argentina</h2><br>
+                    <p>Movistar ganó el Speedtest Award de Ookla, por aumentar su velocidad de conexión.</p><br>
+                    <p> Movistar fue reconocida como la Internet más rápida de la Argentina, al recibir el Speedtest Award de Ookla, líder mundial en pruebas y análisis de Internet.</p>
+                </article>
+            </section>
+            <!--con la etiqueta <aside> podemos construir una barra o caja lateral-->
+            <aside>
+                <h2>Barra lateral</h2><br>
+                <form class="text">
+                    <input type="text" placeholder="ingrese en el boton Buscar">
+                    <a style="color:#eee" href="https://www.google.com/" target="_blank"><strong>Buscar</strong></a>
+                </form>
+            </aside>
+             <!--como los elementos del footer se me suben copio y pego el div clearfix-->
+             <div class="clearfix"></div>
+            <!--ahora colocamos nuestro pie de página con la etiqueta <footer>-->  
+            <footer>
+                Página realizada por @rakelsun
+            </footer>
+        </div>  
+    </body>
+</html>
