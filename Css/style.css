@@ -9,8 +9,10 @@ body {
 }
 
 #container {
-  width: 80%;
-  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*width: 80%;
+  margin: 0px auto;*/
 }
 
 header {
