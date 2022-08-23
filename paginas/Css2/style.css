@@ -13,11 +13,13 @@ body
 /*para darle formato en css a un Id o identificador utilizamos este caracter: #*/
 #container
     {
-        /*colocamos el ancho del container o caja contenedora de mi proyecto*/
-        width: 80%;
-        /*al colocar un margin: 0px auto; nos centra el elemento dentro de nuesto contenedor*/
+    /*colocamos el ancho del container o caja contenedora de mi proyecto*/
+       display: flex;
+       flex-wrap: wrap;
+       width: auto;
+    /*al colocar un margin: 0px auto; nos centra el elemento dentro de nuesto contenedor*/
         margin: 0px auto;
-        /*podemos colocar un borde para saber el tamaño de nuestra caja*/
+    /*podemos colocar un borde para saber el tamaño de nuestra caja*/
     }
 
 /*ahora le daremos estilo a nuestra cabecera*/
@@ -34,26 +36,23 @@ header
         /*con el border bottom ponemos una raya por debajo del boton*/
     }
 
-.menu
-    {
-        background: rgb(64, 103, 141);
-        height: 50px;
-        border-bottom: 1px solid white;
-    }
+.menu {
+  width: 100%;
+  background: rgb(64, 103, 141);
+  height: 50px;
+  border-bottom: 1px solid white;
+  
+}
 
 /*dandole estilo al menu*/
 .menu ul li
     {
-    /*con el float left todo los elementos flotaran a la izquierda*/
-        float: left;
-        /*para quitar las rayas de abajo de cada item, usamos list-stiyle:none;*, luego los separamos el uno del otro con un margin:10px aprox.*/
-        list-style-type: none;
-        text-align: left;
-        margin: 10px;
-        /*para centar los enlaces del menu utilizamos line-heith de 30 px;*/
-        line-height: 30px;
-        float: right;
-    }
+   list-style-type: none;
+   text-align: left;
+   margin: 10px;
+   line-height: 30px;
+   float: right;
+}
 
 .menu ul li:hover
     {
@@ -78,12 +77,43 @@ header
 {
     text-decoration: none;
 }
-.centro
+.centrar
     {
+        width: 100%;
         color:#eee;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 60px;
     }
+
+.centrar-h1{
+    font-size: 14px;
+    text-align: center;
+}
+
+.parrafo{
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.img-contacto{
+    text-align: center;
+    position: center;
+    padding-top: 5%;
+
+}
+
+.img-blog{
+    position: center;
+    padding-top: 5%;
+
+}
+
+.img-quienesSomos, .img-contacto, .img-blog{
+    position: center;
+    padding-top: 5%;
+
+}
 .article
     {
         color:black;
@@ -103,7 +133,7 @@ header
 
 .article h2 
     {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 aside
@@ -112,15 +142,32 @@ aside
         width: calc(25% - 13px);
         background:rgb(64, 103, 141);
         min-height: 900px;
-        padding: 20px 0px 0px 8px;
+        padding: auto;
         float: left;
+        display: flex;
     }
 
-footer
-    {
-        background: black;
-        color: white;
-        text-align: center;
-        height: 50px;
-        line-height: 50px;
-    }
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+
+.footer{
+  font-size: 12px;
+  justify-content: center;
+}
+
+@media(max-width:480px){
+
+ #container{ .menu, header, aside, footer, .centrar, .centra-h1, .imagen-quienesSomos, #content,  
+
+}
+aside{
+    display: block;
+}
+    
+}

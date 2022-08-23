@@ -1,0 +1,173 @@
+
+*
+    {
+    margin: 0px;
+    padding: 0px; 
+    }
+
+    
+header
+    {
+        background: rgb(39, 69, 100);
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px solid white;
+    }
+
+body
+    {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#container
+    {
+   
+       display: flex;
+       flex-wrap: wrap;
+       width: 940px;
+       margin: 0px auto;
+    
+    }
+  
+.menu {
+  width: 100%;
+  background: rgb(64, 103, 141);
+  height: 50px;
+  border-bottom: 1px solid white;
+  
+}
+
+.menu ul li
+    {
+   list-style-type: none;
+   text-align: left;
+   margin: 10px;
+   line-height: 30px;
+   float: right;
+}
+
+.menu ul li:hover
+    {
+        background: rgb(158, 160, 160);
+    }
+
+/*para que los elementos de abajo no suban hacia arriba, en nuestro index.html colocamos un div con la clase clearfix despues del nav y le colocamos clear:both */
+.clearfix
+    { 
+        clear: both;
+    }
+
+#content 
+    {
+    float: left; 
+    width: calc(75.6% - 76px);
+    min-height: 940px;
+    background:cadetblue ;
+    padding: 40px;
+}
+
+
+.article-titulo{
+  font-size: 16px;
+
+}
+.text
+{
+    text-decoration: none;
+}
+.centrar
+    {
+        width: 100%;
+        color:#eee;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+.centrar-h1{
+    font-size: 14px;
+    text-align: center;
+}
+
+.parrafo{
+    text-align: justify;
+    font-size: 12px;
+
+}
+
+.img-contacto{
+    text-align: center;
+    position: center;
+    padding-top: 5%;
+
+}
+
+.img-blog{
+    position: center;
+    padding-top: 5%;
+
+}
+
+.article
+    {
+        color:black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+        text-align: justify;
+    }
+/*colocando una linea por encima del primer artículo*/
+
+.article:first-child
+    {
+        padding-top: 10px;
+        
+    }
+
+.article h2, 
+    {
+        font-size: 16px;
+    }
+
+.article-titulo{
+    font-size: 16px;
+}
+
+aside
+    {
+        color:#eee;
+        width: calc(25% - 13px);
+        background:rgb(64, 103, 141);
+        min-height: 940px;
+        padding: 20px 0 0 0;
+        float: left;
+       
+    }
+
+.barra-lateral{
+    font-size: 14px;
+} 
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+
+.footer{
+  font-size: 12px;
+  justify-content: center;
+}
+
+@media(max-width:480px){
+
+ #container, .menu, header, aside, footer, .centrar, .centra-h1, .imagen-quienesSomos, #content,  
+
+aside
+    
+}
